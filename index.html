@@ -15,59 +15,64 @@
                 </div>
                 <div class="pv-subtitle">
                     We do not collect any data from your
-                    device <br> because we are friends, and 
-                    friends do not snoop <br> on friends.
+                    device because we are friends, and 
+                    friends do not snoop on friends.
                 </div>
             </div>
         </div>
     </div>
 </body>
 <style>
-    .privacy {
-        position: fixed;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        overflow-y: scroll;
-        overflow-x: hidden;  
-        background-image: url("back.jpg");
-        background-size: cover;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    @media only screen {
+        .privacy {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            overflow-y: scroll;
+            overflow-x: hidden;  
+            background-image: url("back.jpg");
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box {
+            background-color: rgba(66, 66, 66, 0.649);
+            border-radius: 10px;
+            padding: 30px 20px;
+            margin: 20px;
+            width: fit-content;
+            backdrop-filter: blur( 10.0px );
+            -webkit-backdrop-filter: blur( 6.0px );
+        }
+
+        .pv-title {
+            color: white;
+            font-size: 30px;
+            text-align: center;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .pv-subtitle {
+            color: white;
+            line-height: 30px;
+            font-size: 20px;
+            margin-top: 15px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
     }
 
-    .container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .box {
-        background-color: rgba(66, 66, 66, 0.649);
-        border-radius: 10px;
-        padding: 30px 50px;
-        width: fit-content;
-        backdrop-filter: blur( 10.0px );
-        -webkit-backdrop-filter: blur( 6.0px );
-    }
-
-    .pv-title {
-        color: white;
-        font-size: 35px;
-        text-align: center;
-        font-weight: bold;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-
-    .pv-subtitle {
-        color: white;
-        line-height: 30px;
-        font-size: 20px;
-        margin-top: 20px;
-        text-align: center;
-        font-family: Arial, Helvetica, sans-serif;
-    }
+    
 </style>
 </html>
